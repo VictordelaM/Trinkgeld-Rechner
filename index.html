@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="" onsubmit="calc(); return false">
+        <h1>Trinkgeldrechner</h1>
+        <label for="rechnung">Wie hoch war die Rechnung?</label>
+        <img src="" alt="">
+        <input type="number" name="rechnung" id="rechnung" required>
+        <label for="share">Wie viele Leute teilen die Rechnung?</label>
+        <img src="" alt="">
+        <input type="number" name="share" id="share" required>
+        <select name="share" id="service">
+            <option value="1">Rotzefrech</option>
+            <option value="2">kakkendreis</option>
+            <option value="3">frech</option>
+            <option value="4">war ok</option>
+            <option value="5">durchschnitt</option>
+            <option value="6">gut</option>
+            <option value="7">korrekt</option>
+            <option value="8">engelsgleich</option>
+            <option value="9">vergötterungswürdig</option>
+            <option value="10">Johanna hat bedient</option>
+        </select>
+        <input type="submit" value="berechne">
+        <p id="output"></p>
+    </form>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
